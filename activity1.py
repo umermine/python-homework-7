@@ -1,7 +1,10 @@
 #Adding variables
 age = int(input("Enter your age "))
 #Writing code
-if age < 20 and age > 10:
-    print("You are Allowed and between 10 to 20")
+if age > 10:
+    if age < 20:
+        print("You are allowed and your age is between 10 and 20.")
+    else:
+        print("You are not allowed because your age is 20 or older.")
 else:
-    print("You are not Allowed and older or younger than 10 to 20")
+    print("You are not allowed because your age is 10 or younger.")
